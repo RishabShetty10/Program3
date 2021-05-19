@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment-3</title>
+</head>
+<body>
+      <link rel="stylesheet" href="Assignment3.css">
+      <title>Program3</title>
+     <header><nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+      </header> 
+        <h2><u>Shreya Ghoshal</u></h2>
+      <p id="demo"></p>
+      <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 5; 
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+        ids.innerHTML = 'Shreya Ghoshal';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #33ccff");
+        fs += 5;
+        if (fs >= 50)
+        {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 500);
+        }
+      }
+    function deTimer()
+      {
+        fs -= 5;
+        ids.innerHTML = 'Shreya Ghoshal';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: #ff3333");
+       if (fs == 5)
+        {
+          clearInterval(var2);
+          var1 = setInterval(inTimer, 500);
+        }
+      }
+</script>
+      <title>Shreya Ghoshal</title>
+      <img src="rish.jpeg" alt="Shreya Ghoshal" width="400" height="233">
+      <br>
+      <h3>by<a href="/html"> Rishab</a></h3>
+      <article>Shreya Ghoshal is an Indian playback singer.She has sung professionally in 19+ languages including Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Bengali, Bhojpuri, Rajasthani, Odia, Assamese, Nepali, French, Urdu, Sanskrit, Angika, Tulu, Gujarati, Punjabi etc. She sang more than 2341 songs in 20+ languages and especially in Hindi she sang 1500+ songs.</article>
+      <br>    
+      <section>Year:2020<br>
+               Date:12th March</section>
+      <h3><u> Reviews</u></h3>      
+      <section>
+        <strong>Miss her concerts!</strong>
+        <br>
+        <stong>Pradyumna</strong><img src="r1.png" alt="rating";>      
+          <br>
+        <strong>My fav singer</strong><br>
+        <hr>
+        <strong>Always my fav</strong> 
+        <br>
+        <stong>Meghana</strong><img src="r2.png" alt="rating";>
+          <br>
+        <strong>Awesome bollywood singer</strong><br>
+        <hr>
+        <strong>She is awesome</strong>
+        <br>
+        <stong>Hitesh</strong><img src="r3.png" alt="rating";>
+          <br>
+          <strong>Nice</strong><br>
+        <hr>
+      </section>
+       <footer><nav>
+          <a href="/html">HOME</a> |
+          <a href="/html">PLACES</a> |
+          <a href="/html">GALLERY</a> |
+          <a href="/html">ABOUT US</a>
+        </nav>
+<br>
+<strong><i>Copyright &copy; 2021-2022 by Rishab</i></strong>
+</footer>
+</body>
+</html>
